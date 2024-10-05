@@ -8,12 +8,19 @@
 int main()
 {
     unsigned int x;
-    std::cout << "Enter number: ";
+    std::cout << "Enter number: "; //получили число
     std::cin >> x;
 
     int i;
-    std::cout << "Select number: ";
+    std::cout << "Select number: "; //получили число
     std::cin >> i;
+
+
+    int bitValue = (x >> i) & 1; //получаем значения бита
+
+    std::cout << " Bit value: " << bitValue << std::endl; //выводим значение
+
+    return 0;
 }
 
 
